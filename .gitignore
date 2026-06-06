@@ -1,0 +1,39 @@
+# Dépendances
+node_modules/
+node_modules_yarn/
+yarn.lock
+
+# Build
+dist/
+
+# Données générées (trop lourdes pour git)
+/data/
+communes-all.final.json
+communes-all.geo.json
+communes-all.insee.json
+communes-all.prices.json
+communes-all.transport.json
+
+# Données sources lourdes
+dvf-all-stats.csv
+dvf-national.csv
+dvf.csv
+loyers.csv
+stations-france.json
+stations-national.json
+
+# Fichiers de pipeline
+*.log
+checkpoint.json
+*-checkpoint.json
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Cache INSEE
+.insee-cache/
+
+# OS
+.DS_Store
