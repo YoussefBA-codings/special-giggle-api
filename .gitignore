@@ -5,6 +5,7 @@ yarn.lock
 
 # Build
 dist/
+*.tsbuildinfo
 
 # Données générées (trop lourdes pour git)
 /data/
