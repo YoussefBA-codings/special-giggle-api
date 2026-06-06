@@ -18,7 +18,7 @@ npm install
 
 ```bash
 npm run data:generate   # 1. Génère les fichiers optimisés (faire une fois)
-npm run start:dev       # 2. Démarre l'API sur http://localhost:3000
+npm run start:dev       # 2. Démarre l'API sur http://localhost:4783
 ```
 
 ---
@@ -160,7 +160,7 @@ Au démarrage, le serveur :
 2. Construit les Maps d'indexation (inseeCode → commune, département, région)
 3. Charge `data/index.json` et `data/thresholds.json` si disponibles
 4. Pré-trie les tableaux de classement (global, rendement, cashflow…)
-5. Démarre l'écoute sur le port 3000
+5. Démarre l'écoute sur le port 4783
 
 ### `npm run build`
 
