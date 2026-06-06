@@ -4,7 +4,7 @@
   "description": "API immobilière nationale des communes françaises",
   "main": "dist/main.js",
   "scripts": {
-    "build": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/nest build",
+    "build": "npx nest build",
     "start": "node dist/main",
     "start:dev": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/main.ts",
     "start:prod": "node dist/main.js",
