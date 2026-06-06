@@ -7,7 +7,7 @@
     "build": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/nest build",
     "start": "node dist/main",
     "start:dev": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/main.ts",
-    "start:prod": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/nest start",
+    "start:prod": "node dist/main.js",
     "data:generate": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/generate-data.ts",
     "data:update:city": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-city.ts",
     "data:update:department": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-department.ts",
