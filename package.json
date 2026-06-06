@@ -4,15 +4,15 @@
   "description": "API immobilière nationale des communes françaises",
   "main": "dist/main.js",
   "scripts": {
-    "build": "npx nest build",
-    "start": "node dist/main",
-    "start:dev": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/main.ts",
+    "build": "./node_modules/.bin/nest build",
+    "start": "node dist/main.js",
+    "start:dev": "./node_modules/.bin/ts-node --transpile-only -r tsconfig-paths/register src/main.ts",
     "start:prod": "node dist/main.js",
-    "data:generate": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/generate-data.ts",
-    "data:update:city": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-city.ts",
-    "data:update:department": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-department.ts",
-    "data:update:region": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-region.ts",
-    "data:clean": "NODE_PATH=./node_modules_yarn ./node_modules_yarn/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/clean-data.ts"
+    "data:generate": "./node_modules/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/generate-data.ts",
+    "data:update:city": "./node_modules/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-city.ts",
+    "data:update:department": "./node_modules/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-department.ts",
+    "data:update:region": "./node_modules/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/update-region.ts",
+    "data:clean": "./node_modules/.bin/ts-node --transpile-only -r tsconfig-paths/register src/scripts/clean-data.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.4.0",
