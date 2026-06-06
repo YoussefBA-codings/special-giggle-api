@@ -21,6 +21,9 @@ export class CommunesController {
       maxYield: parseFloatParam(query.maxYield),
       minPrice: parseFloatParam(query.minPrice),
       maxPrice: parseFloatParam(query.maxPrice),
+      minMedianIncome: parseFloatParam(query.minMedianIncome),
+      maxMedianIncome: parseFloatParam(query.maxMedianIncome),
+      maxDistanceToStation: parseFloatParam(query.maxDistanceToStation),
     };
 
     const sortBy = (query.sortBy as CommuneSortField) ?? 'globalScore';

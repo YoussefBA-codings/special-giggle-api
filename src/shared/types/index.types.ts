@@ -28,6 +28,8 @@ export interface CommuneIndex {
   riskLevel: string;
   tags: string[];
   shortVerdict: string;
+  medianIncome: number | null;
+  distanceToStation: number | null;
 }
 
 export interface PaginatedResponse<T> {

@@ -193,5 +193,7 @@ export function communeToIndex(commune: Commune): CommuneIndex | null {
     riskLevel: commune.investment?.riskLevel ?? 'MEDIUM',
     tags: commune.insights?.tags ?? [],
     shortVerdict: commune.insights?.shortVerdict ?? '',
+    medianIncome: commune.insee?.medianIncome ?? null,
+    distanceToStation: commune.transport?.nearestStation?.distanceKm ?? null,
   };
 }

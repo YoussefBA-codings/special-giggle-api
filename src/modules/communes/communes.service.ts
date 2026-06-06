@@ -17,6 +17,9 @@ export interface CommuneFilters {
   minPrice?: number;
   maxPrice?: number;
   dataQuality?: string;
+  minMedianIncome?: number;
+  maxMedianIncome?: number;
+  maxDistanceToStation?: number;
 }
 
 export type CommuneSortField =
@@ -94,6 +97,15 @@ export class CommunesService {
       if (filters.maxPrice !== undefined) {
         const p = c.apartmentPrice ?? c.housePrice ?? Infinity;
         if (p > filters.maxPrice) return false;
+      }
+      if (filters.minMedianIncome !== undefined) {
+        if (c.medianIncome == null || c.medianIncome < filters.minMedianIncome) return false;
+      }
+      if (filters.maxMedianIncome !== undefined) {
+        if (c.medianIncome == null || c.medianIncome > filters.maxMedianIncome) return false;
+      }
+      if (filters.maxDistanceToStation !== undefined) {
+        if (c.distanceToStation == null || c.distanceToStation > filters.maxDistanceToStation) return false;
       }
       return true;
     });
